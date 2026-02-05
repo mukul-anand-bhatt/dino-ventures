@@ -1,0 +1,28 @@
+{
+  "name": "dino",
+  "module": "src/index.ts",
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "seed": "bun run seed.ts",
+    "test": "bun test tests/concurrency.test.ts"
+  },
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.2.0",
+    "bun-types": "^1.3.8",
+    "prisma": "^6.19.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.19.2",
+    "express": "^5.2.1",
+    "zod": "^4.3.6"
+  }
+}
